@@ -1,6 +1,7 @@
 #include "browser.h"
 #include "storage.h"
 #include "wifi_mgr.h"
+#include <WiFi.h>
 #include <HTTPClient.h>
 #include <WiFiClientSecure.h>
 

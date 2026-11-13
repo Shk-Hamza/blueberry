@@ -3,7 +3,7 @@
 #define PY0 30
 #define PH  (SCR_H - PY0)
 
-static uint32_t rs2 = 88172645463325252ULL;
+static uint64_t rs2 = 88172645463325252ULL;
 static inline uint32_t gr() { rs2 ^= rs2 << 13; rs2 ^= rs2 >> 7; rs2 ^= rs2 << 17; return (uint32_t)rs2; }
 
 // returns true to retry, false to exit to the games menu
